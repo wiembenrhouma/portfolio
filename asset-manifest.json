@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ce53c68d.css",
-    "main.js": "/portfolio/static/js/main.a6f24267.js",
+    "main.js": "/portfolio/static/js/main.ddd8eb06.js",
     "static/media/Capture.PNG": "/portfolio/static/media/Capture.fc83e20483aae6c4ef1f.PNG",
-    "static/media/CV_WiemBENRHOUMA.pdf": "/portfolio/static/media/CV_WiemBENRHOUMA.c1aff3f2f9fa31f9f977.pdf",
+    "static/media/CV_WiemBENRHOUMA.pdf": "/portfolio/static/media/CV_WiemBENRHOUMA.9ad6cbe4ca49a92c885d.pdf",
     "static/media/data.PNG": "/portfolio/static/media/data.5775f9303aade052dc50.PNG",
     "static/media/portfilio.PNG": "/portfolio/static/media/portfilio.685f5a0ba4053ce1682f.PNG",
     "static/media/data1.PNG": "/portfolio/static/media/data1.c21ba42a264810e91f3a.PNG",
     "static/media/capture1.PNG": "/portfolio/static/media/capture1.3731817d2d261e2595a9.PNG",
     "index.html": "/portfolio/index.html",
     "main.ce53c68d.css.map": "/portfolio/static/css/main.ce53c68d.css.map",
-    "main.a6f24267.js.map": "/portfolio/static/js/main.a6f24267.js.map"
+    "main.ddd8eb06.js.map": "/portfolio/static/js/main.ddd8eb06.js.map"
   },
   "entrypoints": [
     "static/css/main.ce53c68d.css",
-    "static/js/main.a6f24267.js"
+    "static/js/main.ddd8eb06.js"
   ]
 }
