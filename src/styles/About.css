@@ -1,0 +1,93 @@
+/* Section "About" */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; /* Augmenter légèrement l'écart pour éviter l'écrasement */
+  padding: 50px;
+}
+
+/* Texte de la section "About" */
+.about-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px; /* Ajoute un espace avant le bouton */
+}
+
+/* Bouton de téléchargement */
+.download-btn {
+  display: inline-block;
+  background-color: #6a0dad;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+  text-align: center;
+  margin-top: 10px; /* Ajout d'un espace pour l'alignement */
+}
+
+.download-btn:hover {
+  background-color: #8a2be2;
+}
+
+/* Animation Lottie */
+.animation {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Centre l'animation dans son conteneur */
+  align-items: center;
+  max-width: 300px; /* Ajustement de la taille */
+  max-height: 300px;
+  transform: translateX(-100px); /* Déplace l'animation légèrement vers la gauche */
+}
+
+/* Media Queries pour rendre la section "About" responsive */
+@media screen and (max-width: 768px) {
+  #about {
+    flex-direction: column; /* Empiler les éléments verticalement sur les petits écrans */
+    padding: 30px; /* Réduire l'espacement autour */
+  }
+
+  .about-text {
+    max-width: 100%; /* Permet au texte de prendre toute la largeur sur mobile */
+    margin-bottom: 20px; /* Ajout d'espace en bas du texte pour séparer du bouton */
+  }
+
+  .animation {
+    max-width: 250px; /* Réduire la taille de l'animation sur mobile */
+    max-height: 250px;
+    transform: translateX(0); /* Réinitialiser le déplacement de l'animation */
+  }
+
+  .download-btn {
+    font-size: 0.9rem; /* Réduire la taille du bouton */
+    padding: 8px 12px; /* Réduire le padding du bouton */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-text h2 {
+    font-size: 1.5rem; /* Réduire la taille du titre sur les petits écrans */
+  }
+
+  .about-text p {
+    font-size: 1rem; /* Réduire la taille du texte sur les petits écrans */
+  }
+
+  .download-btn {
+    font-size: 0.8rem; /* Taille de police encore plus petite pour les très petits écrans */
+    padding: 6px 10px; /* Réduire le padding pour les petits écrans */
+  }
+}

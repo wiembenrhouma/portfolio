@@ -1,0 +1,48 @@
+/* Section Footer */
+.footer {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; /* Aligner verticalement */
+    color: white;
+    padding: 5px 30px; /* Espacement intérieur ajusté */
+  }
+  
+  /* Lien d'icône dans le footer */
+  .footer a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white; /* Assurer que les icônes restent blanches */
+    transition: color 0.3s ease-in-out; /* Ajout d'un effet au survol */
+  }
+  
+  .footer a:hover {
+    color: #ff79c6; /* Changer la couleur des icônes au survol */
+  }
+  
+  /* Media Queries pour rendre le footer responsive */
+  @media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Empiler les éléments pour les écrans plus petits */
+      justify-content: center; /* Centrer les éléments */
+      align-items: center;
+      padding: 10px 20px; /* Réduire les espacements latéraux sur mobile */
+    }
+  
+    .footer a {
+      font-size: 1.2rem; /* Réduire légèrement la taille des icônes sur mobile */
+      margin-bottom: 10px; /* Ajouter un espace entre les icônes */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer {
+      padding: 15px 20px; /* Réduire l'espacement intérieur sur les très petits écrans */
+    }
+  
+    .footer a {
+      font-size: 1.3rem; /* Réduire encore plus la taille des icônes */
+    }
+  }
+  .footer a svg {
+    font-size: 4rem; /* Agrandir ici */
+  }

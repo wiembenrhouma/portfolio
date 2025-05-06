@@ -1,0 +1,86 @@
+/* Styles pour le header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent; /* Fond transparent */
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Liste de navigation */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white; /* Couleur du texte */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none; /* Enlève la décoration par défaut des liens */
+  position: relative;
+}
+
+/* Ajouter une ligne sous le lien au survol */
+.navbar ul li a:hover::after,
+.navbar ul li a:active::after {
+  content: ''; /* Ajoute une ligne */
+  position: absolute;
+  bottom: 0; /* Positionne la ligne en bas du lien */
+  left: 0;
+  width: 100%; /* La ligne prend toute la largeur du lien */
+  height: 2px; /* Hauteur de la ligne */
+  background-color: #ff79c6; /* Couleur de la ligne */
+}
+
+/* Media Queries pour rendre le header responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Aligner les éléments verticalement sur les petits écrans */
+    gap: 20px; /* Réduire l'espace entre les éléments */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Aligner les liens verticalement */
+    gap: 15px; /* Réduire l'espace entre les liens */
+  }
+
+  .navbar ul li {
+    display: block; /* Les éléments de la liste deviennent des blocs pour être empilés */
+  }
+
+  .navbar ul li a {
+    font-size: 16px; /* Réduire la taille de la police sur mobile */
+    padding: 8px 15px; /* Réduire la taille des boutons de liens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar ul li a {
+    font-size: 14px; /* Encore plus petit sur les très petits écrans */
+    padding: 6px 12px; /* Réduire davantage la taille des liens */
+  }
+}

@@ -1,0 +1,82 @@
+/* Section des compétences */
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Conteneur principal pour les icônes */
+  .tech-icons-container {
+    display: flex; /* Utilisation de Flexbox */
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espacement uniforme */
+    padding: 30px;
+  }
+  
+  /* Styles des icônes */
+  .tech-icons {
+    border: 1.7px solid rgba(200, 137, 230, .637);
+    border-radius: 5px;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, .137);
+    display: table;
+    font-size: 4.5em;
+    margin: 15px;
+    opacity: 0.93;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.4s ease;
+    vertical-align: middle;
+  }
+  
+  /* Effet au survol des icônes */
+  .tech-icons:hover {
+    transform: scale(1.1); /* Zoom sur l'icône au survol */
+    box-shadow: 0 0 15px rgba(200, 137, 230, 1); /* Effet lumineux */
+  }
+  
+  /* Icônes SVG */
+  .tech-icons svg {
+    font-size: 1em;
+    color: white;
+  }
+  
+  /* Titre de la section des compétences */
+  #skills h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    margin-left: 50px;
+  }
+  
+  /* Responsivité - ajustement des icônes sur petits écrans */
+  @media screen and (max-width: 768px) {
+    .tech-icons {
+      font-size: 3em; /* Réduire la taille des icônes sur les petits écrans */
+    }
+  
+    #skills h2 {
+      font-size: 1.5rem; /* Réduire la taille du titre */
+      margin-left: 20px; /* Réduire la marge à gauche */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .tech-icons {
+      font-size: 2.5em; /* Réduire davantage la taille des icônes */
+    }
+  
+    #skills h2 {
+      font-size: 1.2rem; /* Réduire encore la taille du titre */
+    }
+  }
+  .text-list {
+    list-style-type: disc;
+    margin-left: 2rem;
+    color: #444;
+    font-size: 1rem;
+  }
+  
